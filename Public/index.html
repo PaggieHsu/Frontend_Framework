@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
+                <div class="sidebar-sticky">
+                    <h4 class="text-light p-3">Dashboard Kit</h4>
+                    <ul class="nav flex-column">
+                        <a href="#" class="nav-link text-light">
+                            <img src="Assets/images/overview.png" style="width:30px;height:auto;" class="icon" alt="Overview"> Overview</a>
+                        <a href="#" class="nav-link text-light">
+                            <img src="Assets/images/tickets.png" style="width:30px;height:auto;" class="icon" alt="Tickets"> Tickets</a>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light">
+                                <img src="Assets/images/idea.png" style="width:30px;height:auto;" class="icon" alt="Ideas"> Ideas
+                            </a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light"> 
+                                <img src="Assets/images/contact.png" style="width:30px;height:auto;" alt="Contacts" >Contacts</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light">
+                                <img src="Assets/images/agent.png" style="width:30px;height:auto;" >Agents</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light">
+                                <img src="Assets/images/article.png" style="width:30px;height:auto;" > Articles</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light">
+                                <img src="Assets/images/setting.png" style="width:30px;height:auto;" > Settings</a>
+                        </li>
+                        <li class="nav-item text-light">
+                            <a href="#" class="nav-link text-light">
+                                <img src="Assets/images/subscription.png" style="width:30px;height:auto;" > Subscription</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+                <h2 class="my-4">Overview</h2>
+
+                <!-- Ticket Row -->
+                <div class="row text-center mb-4">
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <div class="ticket-box">Unresolved<br><span>12</span></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <div class="ticket-box active">Overdue<br><span>34</span></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <div class="ticket-box">Open<br><span>56</span></div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <div class="ticket-box">On hold<br><span>78</span></div>
+                    </div>
+                </div>
+                <!-- Trends and Stats Section -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="trends-stats-container p-4">
+                            <div class="row">
+                                <!-- Trends Section -->
+                                <div class="col-lg-6">
+                                    <div class="trends-box">
+                                        <h5>Today's trends</h5>
+                                        <p>as of 25 May 2019, 09:41 PM</p>
+                                        <!-- Placeholder for Graph -->
+                                        <img src="Assets/images/graph.png" style="width:100%;height:auto;" alt="Graph" class="img-fluid">
+                                    </div>
+                                </div>
+                                <!-- Stats Section -->
+                                <div class="col-lg-6">
+                                    <div class="stats-box">
+                                        <p class="stat1">Resolved<br><span>449</span></p>
+                                        <p class="stat1">Received<br><span>426</span></p>
+                                        <p class="stat1">Average first response time<br><span>33m</span></p>
+                                        <p class="stat1">Average response time<br><span>3h 8m</span></p>
+                                        <p class="stat2">Resolution within SLA<br><span>94%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tickets and Tasks Section -->
+                <div class="row mt-4 ticket-tasks-container">
+                    <div class="col-lg-6">
+                        <div class="tickets-box">
+                            <h5>Unresolved tickets <span class="detail">view details</span></h5>
+                            <p>Group: Support</p>
+                            <div class="ticket-list">
+                                <div class="ticket-item">
+                                    <span>Waiting on Feature Request</span>
+                                    <span class="number">4238</span>
+                                </div>
+                                <div class="ticket-item">
+                                    <span>Awaiting Customer Response</span>
+                                    <span class="number">1005</span>
+                                </div>
+                                <div class="ticket-item">
+                                    <span>Awaiting Developer Fix</span>
+                                    <span class="number">914</span>
+                                </div>
+                                <div class="ticket-item">
+                                    <span>Pending</span>
+                                    <span class="number">281</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tasks-box p-4">
+                            <h5>Tasks</h5>
+                            <p>Today</p>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="task1" class="task-checkbox">
+                                    <label for="task1">Finish ticket update <span class="badge bg-warning">URGENT</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="task2" class="task-checkbox">
+                                    <label for="task2">Create new ticket example <span class="badge bg-success">NEW</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="task3" class="task-checkbox">
+                                    <label for="task3">Update ticket report <span class="badge bg-secondary">DEFAULT</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+
+<script src="/Assets/js/main.js"></script>
+</html>

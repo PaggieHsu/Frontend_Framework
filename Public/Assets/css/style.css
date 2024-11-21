@@ -1,0 +1,210 @@
+/* Sidebar  */
+.nav-link text-light:hover {
+    transform: scale(1.05); 
+    background-color: #495057;
+    border-radius: 10px;
+}
+.sidebar {
+    font-weight: 500;
+    height: 100vh;
+    padding-top: 1rem;
+    background-color: #343a40;
+}
+.sidebar .nav-link {
+    color: #adb5bd;
+    padding: 0.75rem 1.5rem;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    color: #ffffff;
+    background-color: #495057;
+}
+
+/* Main Content  */
+
+/* Ticket Box  */
+.ticket-box {
+    background-color: #f8f9fa; 
+    color: #212529;
+    padding: 1.5rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.ticket-box:hover {
+    transform: scale(1.05); 
+    border: #000000;
+    color: #0570da;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ticket-box {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+.trends-stats-container {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trends-box {
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.stats-box {
+    color: #222529;
+    border: 1px solid #3f6589;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat1 {
+    border-bottom: 1px solid #3f6589;
+    font-weight: 500;
+}
+.stat2 {
+    font-weight: 500;
+}
+
+.ticket-box1 {
+    border-bottom: 1px solid #3f6589;
+    font-weight: 500;
+}
+
+/* Typography */
+h2 {
+    font-weight: 600;
+}
+h5 {
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats-box {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Style for task checkbox */
+
+/* Tickets Section */
+
+.ticket-tasks-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 1rem; 
+}
+
+.ticket-tasks-container .col-lg-6 {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.tickets-box {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #343a40;
+}
+
+/* Header and detail*/
+.tickets-box h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets-box .detail {
+    color: #007bff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.tickets-box .detail:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+/* Ticket item  */
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0; 
+    border-bottom: 1px solid #e9ecef; 
+}
+
+.ticket-item:last-child {
+    border-bottom: none; 
+}
+
+/* Number */
+.ticket-item span.number {
+    font-weight: bold;
+    color: #495057;
+    margin-left: 1rem;
+    text-align: right; 
+}
+
+.detail {
+    text-align: end;
+}
+
+/* Space for the Tickets and Tasks section */
+.row.mt-4 {
+    margin-top: 2rem; 
+}
+
+/* Tasks Box Styling */
+.tickets-box, .tasks-box {
+    margin-bottom: 2rem; 
+}
+
+.col-lg-6 {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.task-checkbox {
+    margin-right: 10px; 
+    transform: scale(1.2); 
+}
+
+/* Task list styling */
+.tasks-box ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.tasks-box li {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 0.75rem; 
+}
+
+.tasks-box li label {
+    font-size: 2rem; 
+    color: #212529;
+    cursor: pointer; 
+}
+.tasks-box {
+    margin-top: 1.5rem;
+}
